@@ -97,45 +97,90 @@ textarea {
 
 
 html {
-  background-color: #fff;
   height: 100%;
-  background: rgb(162, 211, 252);
+  background: rgb(59, 59, 59);
+  color: rgb(98, 205, 255);
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Dosis', sans-serif;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
+.flex-wrapper {
   display: flex;
   justify-content: space-between;
-  background: rgb(162, 211, 252);
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header, 
+footer, 
+main {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+header {
+    height: 80px;
+    padding: 10px 0 30px 0;
+}
+
+header h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+footer {
+    height: 20px;
+    border-top: solid 2px rgb(98, 205, 255);
+    padding-top: 3%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+footer img {
+    max-width: 50px;
+    padding-right: 20%;
+
+}
+
+main {
+    border-bottom: solid 2px rgb(98, 205, 255);
+    padding-bottom: 3%;
+}
+h2 {
+    font-weight: 300;
+}
+h2 span {
+    font-weight: 500;
 }
 
 .div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: rgb(162, 211, 252);
-  height: 300px;
+  line-height: 1.2em;
+  font-size: 1.3em;
+  height: 200px;
   display: flex;
   width: 30%;
   justify-content: center;
   align-items: center;
-  color: rgb(4, 51, 90);
+  margin: 3% 0;
+  font-weight: 300;
+}
+
+p span {
+    font-weight: 700;
 }
 
 .div-1, .div-2 {
-    border-right: .5px solid rgb(4, 51, 90);
+    border-right: .5px solid rgb(98, 205, 255);
+    padding-right: 2%;
 }
-
-
 
 /* ==========================================================================
    Helper classes
