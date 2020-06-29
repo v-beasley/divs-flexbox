@@ -98,88 +98,74 @@ textarea {
 
 html {
   height: 100%;
+  width: 100%;
   background: rgb(59, 59, 59);
-  color: rgb(98, 205, 255);
 }
 
 body {
   font-family: 'Dosis', sans-serif;
-  padding: 2em;
+  padding: 0em 2em;
   font-size: 1.25em;
   height: 100%;
+  color: rgb(98, 205, 255);
+  display: flex;
+  justify-content: center;
 }
 
 .flex-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-flow: row wrap;
-}
-
-header, 
-footer, 
-main {
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-}
-
-header {
-    height: 80px;
-    padding: 10px 0 30px 0;
-}
-
-header h1 {
-    font-size: 60px;
-    font-weight: 700;
-}
-
-footer {
-    height: 20px;
-    border-top: solid 2px rgb(98, 205, 255);
-    padding-top: 3%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-}
-
-footer img {
-    max-width: 50px;
-    padding-right: 20%;
-
-}
-
-main {
-    border-bottom: solid 2px rgb(98, 205, 255);
-    padding-bottom: 3%;
-}
-h2 {
-    font-weight: 300;
-}
-h2 span {
-    font-weight: 500;
-}
-
-.div-1, .div-2, .div-3 {
-  line-height: 1.2em;
-  font-size: 1.3em;
-  height: 200px;
-  display: flex;
-  width: 30%;
-  justify-content: center;
-  align-items: center;
-  margin: 3% 0;
-  font-weight: 300;
+  max-width: 1200px;
 }
 
 p span {
     font-weight: 700;
+    font-family: 'Lora', sans-serif;
 }
 
-.div-1, .div-2 {
-    border-right: .5px solid rgb(98, 205, 255);
-    padding-right: 2%;
+header, 
+footer  {
+    display:flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Lora', sans-serif;
+}
+
+main {
+    border-bottom: solid 1px rgb(98, 205, 255);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main p {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.div-1, .div-2, .div-3 {
+  line-height: 1.5em;
+  font-size: 1.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  border-bottom: .5px solid rgb(140, 215, 250);
+}
+
+footer {
+    border-top: solid 2px rgb(98, 205, 255);
+}
+
+img {
+    max-width: 50px;
+    padding: 20px 20px 20px 0;
+
 }
 
 /* ==========================================================================
